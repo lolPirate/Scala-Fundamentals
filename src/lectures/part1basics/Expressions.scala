@@ -52,4 +52,7 @@ object Expressions extends App {
   }
   println(aCodeBlock)
 
+  // 1. Difference between "hello world" vs println("hello world")
+  // "hello world" is a string literal; println("hello world") is an expression
+
 }

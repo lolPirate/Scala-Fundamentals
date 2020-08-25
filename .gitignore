@@ -1,0 +1,7 @@
+# IDE specifics
+.idea
+
+# Output Files
+out/
+
+# Others

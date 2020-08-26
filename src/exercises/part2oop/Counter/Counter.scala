@@ -5,11 +5,17 @@ class Counter(number: Int) {
 
   def increment(): Counter = new Counter(this.number + 1)
 
-  def increment(by: Int): Counter = new Counter(this.number + by)
+  def increment(by: Int): Counter = {
+    if (by <= 0) this
+    else increment().increment(by - 1)
+  }
 
   def decrement(): Counter = new Counter(this.number - 1)
 
-  def decrement(by: Int): Counter = new Counter(this.number - by)
+  def decrement(by: Int): Counter = {
+    if (by <= 0) this
+    else decrement().decrement(by - 1)
+  }
 
 }
 

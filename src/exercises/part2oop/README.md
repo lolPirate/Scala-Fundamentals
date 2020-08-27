@@ -18,4 +18,5 @@
         * increment(by: Int): Counter = Increments counter by "by" and returns new Counter
         * decrement(): Counter = Decrements counter by 1 and returns new Counter
         * decrement(by: Int): Counter = Decrements counter by "by" and returns new Counter
-   
+
+## Question 3 : Person   

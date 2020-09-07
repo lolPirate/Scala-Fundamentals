@@ -71,6 +71,8 @@ case object Empty extends MyList[Nothing] {
 }
 
 case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
+  def withFilter(func: A => Boolean): MyList[A] = filter(func)
+
   def head: A = this.h
 
   def tail: MyList[A] = this.t
